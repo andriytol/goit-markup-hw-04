@@ -107,22 +107,28 @@ body {
   margin-right: 50px;
 }
 
-.auth-item:hover,
-.auth-item:focus {
-  color: var(--blue-color);
-}
-
 .auth-link {
   align-items: center;
   display: inline-flex;
-  color: currentColor;
+  color: #757575;
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
 }
 
-.auth-hover-one::before {
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-link:hover,
+.auth-link:focus {
+  color: var(--blue-color);
+}
+
+/* .auth-hover-one::before {
   content: "";
   width: 16px;
   height: 12px;
@@ -138,7 +144,7 @@ body {
   margin-right: 10px;
   background-image: url(../images/vector.svg);
   background-size: contain;
-}
+} */
 
 /* service------------------------------------------ */
 .service {
@@ -150,7 +156,11 @@ body {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/img.jpg);
   background-repeat: no-repeat;
 }
@@ -196,7 +206,19 @@ body {
   width: calc((100% - 90px) / 4);
 }
 
-.logo-antenna::before {
+.benefits-box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.benefits-icon {
+  margin: auto;
+}
+
+/* .logo-antenna::before {
   content: "";
   display: block;
   height: 120px;
@@ -238,7 +260,7 @@ body {
   background-position: center;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-}
+} */
 
 .benefits-item:not(:last-child) {
   margin-right: 30px;
@@ -334,17 +356,49 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
-.team-lists {
-  padding: 0;
-  margin: 0;
+.logo-box {
   display: flex;
-  margin-left: 32px;
-  margin-top: 16px;
+  justify-content: center;
 }
 
-.team-link.instagram {
+.logo-item {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
+}
+
+.logo-item:hover,
+.logo-item:focus {
+  color: var(--white-color);
+  background-color: #2196f3;
+}
+
+.logo-item + .logo-item {
+  margin-left: 10px;
+}
+
+.logo-link {
+  margin: 12px;
+  display: block;
+  color: currentColor;
+}
+
+.logo-team {
+  display: flex;
+  fill: currentColor;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  color: var(--white-color);
+}
+
+/* .team-link.instagram {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -382,14 +436,63 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-}
+} */
 
 .team .team-items:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-link:hover {
+.team-link:hover,
+.team-link:focus {
   background-color: var(--blue-color);
+}
+
+/* clients----------------------------------------- */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  border-radius: 4px;
+  display: flex;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+}
+
+.clients-icon {
+  fill: currentColor;
+  margin: auto;
 }
 
 /* footer------------------------------------------ */
@@ -450,15 +553,21 @@ body {
   display: flex;
 }
 
+.item-network {
+  color: var(--white-color);
+}
+
 .link-network {
+  color: currentColor;
   display: inline-block;
   width: 44px;
   height: 44px;
-  background-color: #44454E;
+  background-color: #44454e;
   border-radius: 50%;
 }
 
-.link-network:hover {
+.link-network:hover,
+.link-network:focus {
   background-color: var(--blue-color);
 }
 
@@ -466,7 +575,12 @@ body {
   margin-left: 10px;
 }
 
-.instagram-network {
+.logo-network {
+  fill: currentColor;
+  margin: 12px;
+}
+
+/* .instagram-network {
   background-image: url(../images/instagram.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -488,7 +602,7 @@ body {
   background-image: url(../images/linkedin.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 /* portfolio------------------------------------------ */
 .portfolio {
