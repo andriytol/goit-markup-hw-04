@@ -208,15 +208,16 @@ body {
 
 .benefits-box {
   display: flex;
-  width: 270px;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
 }
 
-.benefits-icon {
+/* .benefits-icon {
   margin: auto;
-}
+} */
 
 /* .logo-antenna::before {
   content: "";
@@ -365,17 +366,15 @@ body {
 }
 
 .logo-item {
-  display: inline-block;
   width: 44px;
   height: 44px;
-  color: #afb1b8;
-  border-radius: 50%;
 }
 
-.logo-item:hover,
-.logo-item:focus {
+.logo-link:hover,
+.logo-link:focus {
   color: var(--white-color);
   background-color: #2196f3;
+  border-radius: 50%;
 }
 
 .logo-item + .logo-item {
@@ -383,8 +382,11 @@ body {
 }
 
 .logo-link {
-  margin: 12px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   color: currentColor;
 }
 
@@ -466,10 +468,10 @@ body {
   display: flex;
 }
 
-.clients-item {
+/* .clients-item {
   border-radius: 4px;
   display: flex;
-}
+} */
 
 .clients-item + .clients-item {
   margin-left: 30px;
@@ -508,6 +510,7 @@ body {
 
 .div-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-studio {
@@ -537,6 +540,9 @@ body {
 }
 
 .title-network {
+  margin-top: 0;
+  /* margin-bottom: 22px; */
+  padding: 0;
   color: var(--white-color);
   font-weight: 700;
   font-size: 14px;
@@ -554,16 +560,21 @@ body {
 }
 
 .item-network {
+  display: flex;
   color: var(--white-color);
+  width: 44px;
+  height: 44px;
 }
 
 .link-network {
   color: currentColor;
-  display: inline-block;
-  width: 44px;
-  height: 44px;
   background-color: #44454e;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .link-network:hover,
@@ -577,7 +588,6 @@ body {
 
 .logo-network {
   fill: currentColor;
-  margin: 12px;
 }
 
 /* .instagram-network {
@@ -654,7 +664,15 @@ body {
 }
 
 .portfolio-link {
+  display: block;
   text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+   0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-div {
