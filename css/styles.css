@@ -456,6 +456,8 @@ body {
 }
 
 .clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -479,6 +481,8 @@ body {
 
 .clients-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   color: #afb1b8;
@@ -494,7 +498,6 @@ body {
 
 .clients-icon {
   fill: currentColor;
-  margin: auto;
 }
 
 /* footer------------------------------------------ */
@@ -541,7 +544,7 @@ body {
 
 .title-network {
   margin-top: 0;
-  /* margin-bottom: 22px; */
+  margin-bottom: 22px;
   padding: 0;
   color: var(--white-color);
   font-weight: 700;
@@ -560,14 +563,13 @@ body {
 }
 
 .item-network {
-  display: flex;
-  color: var(--white-color);
+  
   width: 44px;
   height: 44px;
 }
 
 .link-network {
-  color: currentColor;
+  color: var(--white-color);
   background-color: #44454e;
   border-radius: 50%;
   display: flex;
